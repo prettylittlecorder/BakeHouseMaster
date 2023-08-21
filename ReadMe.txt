@@ -6,3 +6,9 @@ Tech Stack:
 3. MS SQL 2018
 4. Nodejs v18.17.1
 5. Frontend ReactJS
+
+Folder Structure
+
+1. BakeHouse - Frontend App
+2. BakeHouseWebAPI - WebAPI C#
+3. SampleUI - showcase of UI
