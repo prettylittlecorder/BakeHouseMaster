@@ -1,0 +1,357 @@
+/* BakeHouse.css */
+body {
+  background-color: #fffefe;
+}
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .tile {
+    border: 1px thin #999999;
+    background-color: #fefdfd;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .image-container {
+    width: 100%; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item-price-tag{
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .item-price-tag .item-right {
+    float: right;
+  }
+  
+  .item-price-tag .item-left {
+    float: left;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .item-price-tag .item-middle {
+    display: block;
+    float: none;
+  }
+
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .quantity {
+    font-weight: bold;
+    padding: 0 10px;
+  }
+
+  /* BakeHouse.css */
+
+  .bake-house {
+    display: flex; /* Use flexbox to arrange the two containers side by side */
+    justify-content: space-between; /* Create space between the two containers */
+   padding-bottom: 20 px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.bake-house-left {
+  padding: 10px; /* Add padding for spacing inside the container */
+  background-color: #f0f0f0;
+  float: left; /* Set a background color for the left container */
+  min-width: 60% !important;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+/* Style the right container (ShoppingCart) */
+.bake-house-right {
+  padding: 10px; /* Add padding for spacing inside the container */
+  /* background-color: #f0f0f0;  */
+  background-color: #f3efeb;
+  float: right;
+  min-width: 35% !important;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.clear {
+
+  float: none;
+}
+  
+  .bake-item-list {
+    flex: 0; /* Expand to take available space */
+  }
+  
+  .cart {
+    flex: 0; /* Expand to take available space */
+  }
+  .checkout-button {
+    background-color: #cdcbcb;
+    color: #666666;
+    border-radius: 10px;
+    width: 70%;
+    font-weight: bold;
+    font-size: large;
+    height: 60px;
+    text-align: center;
+
+    /* Add more styles as needed */
+  }
+
+  .invoice {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f3efeb;
+    /* background-color: #f4f4f4; */
+  }
+  
+  .invoice .star {
+    font-size: 24px;
+    color: #f4f4f4;
+  }
+  
+  .invoice .star.filled {
+    color: gold;
+  }
+
+  /* styles.css */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.left-column {
+  flex: 50% ;
+  background-color: #f0f0f0;
+}
+
+.right-column {
+  
+  flex: 50% !important;
+  background-color: #e0e0e0;
+}
+
+table {
+  border: 1px solid;
+  width: 100%;
+  margin-top: 15px;
+}
+
+th {
+  background-color:  #b7b7b7; /* Set your desired background color here */
+  /* Add any other styles you need */
+}
+
+thead {
+  border-bottom: 1px solid black;
+}
+
+.order-info {
+  text-align: right;
+  
+}
+.order-info .sub-title{
+  font-size: small;
+}
+
+.order-info .main-title{
+  font-size: large;
+}
+
+Label {
+  text-align: left;
+}
+
+input [type='text'] {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's above other content */
+}
+
+/* Style for the popup content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.btn-right {
+  float: right;
+}
+
+h2 {
+  color: #8e8d8d;
+}
+
+h1 {
+  color: #7f7c7c;
+}
+.item-price-tag{
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.item-price-tag .item-right {
+  float: right;
+}
+
+.item-price-tag .item-left {
+  float: left;
+}
+
+.item-price-tag .item-middle {
+  display: block;
+}
+
+.discount-label {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  background-color: #ff0000; /* Background color for the label */
+  color: #fff; /* Text color for the label */
+  padding: 5px 10px; /* Adjust padding as needed */
+  font-size: 12px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  border-radius: 5px; /* Adjust border radius as needed */
+}
+
+.item-minus-plus {
+  font-weight: bold;
+  font-size:medium;
+
+}
+
+Button {
+  border-radius: 10px;
+}
+
+.greenButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.greenButton:hover {
+  background-color: darkgreen; /* Change color on hover if desired */
+}
+
+.disabledButton {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: not-allowed;
+}
+
+.onCheckOutButton {
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: white; /* Text color */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+    width: 70%;
+    font-weight: bold;
+    font-size: large;
+    height: 60px;
+    text-align: center;
+}
+
+.onCheckOutButton:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.bakeditem-itemName {
+  text-align: left;
+  font-size: small;
+}
+
+/* Styling for the main title */
+.topic {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6c4728; /* Green color */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for the slogan */
+.slogan {
+  font-size: 18px;
+  color: #bea27a; /* Blue-gray color */
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Styling for inline ChoiceGroup options */
+.choiceGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Style individual ChoiceGroup options */
+.choiceGroup .ms-ChoiceField {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.company-info {
+  text-align: left;
+  margin: 0px;
+}
+
+.invoice-title {
+  text-align: right;
+}
+
+td{ 
+  text-align: left;
+}
